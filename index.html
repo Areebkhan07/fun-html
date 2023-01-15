@@ -29,7 +29,7 @@ left: 75%;
 transform: translate(-50%, -50%);
 }
 #botao2 {
- border: 2px solid #4CAF50;font-size: 50px;
+ border: 2px solid #ff0000;font-size: 50px;
 position: absolute;
  left: 50%;
   top: 68%;
@@ -37,16 +37,16 @@ position: absolute;
 </style>
 </head>
 <body>
-<button id="botao1">YES BBY!</button>
+<button id="botao1">YES!</button>
 <button id="botao2">NO</button>
 <script>
 const button2 = document.getElementById('botao2');
 let left = 50;
 button2.addEventListener('mouseover', function() {
-  if(left == 50){
-    left = 85;
+  if(left == 35){
+    left = 65;
   }else{
-    left = 40;
+    left = 35;
   }
   this.style.left = left + '%';
 });
